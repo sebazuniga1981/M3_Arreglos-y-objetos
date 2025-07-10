@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: white;
+  font-family: "Roboto", sans-serif;
 }
 nav {
   padding: 10px;
@@ -10,19 +11,18 @@ nav {
 }
 nav > a {
   font-size: large;
-  font-weight: 600;           /* Letra más ancha */
-  color: black;               /* Evitamos herencia inesperada */
+  font-weight: 500;
+  color: black;
   text-decoration: none;
   margin: 0 10px;
   transition: transform 0.2s ease, color 0.2s ease;
-  display: inline-block;      /* Necesario para aplicar transform */
+  display: inline-block;
   cursor: pointer;
 }
 
 nav > a:hover {
-  transform: scale(1.1);      /* Agranda levemente al pasar el puntero */
-  color: #5a2d0c;             /* Cambia color en hover si quieres */
-
+  transform: scale(1.1);
+  color: #5a2d0c;
 }
 .banner {
   position: relative;
@@ -51,8 +51,7 @@ nav > a:hover {
   text-shadow: 1px 1px 4px black;
   margin: 0;
 }
-#section-venta
-#section-alquiler {
+#section-venta #section-alquiler {
   padding: 20px;
   min-height: 300px;
 }
@@ -62,7 +61,9 @@ nav > a:hover {
   margin: 10px;
   border-radius: 8px;
   background-color: #f5f5f5;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  flex: 1 1 300px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 .propiedad img {
@@ -92,7 +93,7 @@ button:hover {
   background-color: #a76e46;
   transform: scale(1.1);
 }
-h2{
+h2 {
   text-align: center;
 }
 section a {
