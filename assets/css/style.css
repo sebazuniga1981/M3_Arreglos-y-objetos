@@ -1,19 +1,28 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: white;
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
 }
-nav{
-    border: 1px solid black;
-    padding: 10px;
-    background-color: burlywood;
-    text-align: center;
-    
+nav {
+  padding: 10px;
+  background-color: burlywood;
+  text-align: center;
 }
-nav > a{
-    font-size: large;
-    color: inherit;
-    all: unset;
+nav > a {
+  font-size: large;
+  font-weight: 600;           /* Letra más ancha */
+  color: black;               /* Evitamos herencia inesperada */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;      /* Necesario para aplicar transform */
+  cursor: pointer;
+}
+
+nav > a:hover {
+  transform: scale(1.1);      /* Agranda levemente al pasar el puntero */
+  color: #5a2d0c;             /* Cambia color en hover si quieres */
+
 }
 .banner {
   position: relative;
@@ -42,16 +51,10 @@ nav > a{
   text-shadow: 1px 1px 4px black;
   margin: 0;
 }
-#section-venta{
-    border: 1px solid black;
-    padding: 20px;
-    min-height: 300px;
-}
-
-#section-alquiler{
-      border: 1px solid black;
-    padding: 20px;
-    min-height: 300px;
+#section-venta
+#section-alquiler {
+  padding: 20px;
+  min-height: 300px;
 }
 .propiedad {
   border: 1px solid #ccc;
@@ -83,9 +86,42 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  ;
 }
 
 button:hover {
   background-color: #a76e46;
+  transform: scale(1.1);
+}
+h2{
+  text-align: center;
+}
+section a {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav > a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .banner {
+    height: 150px;
+  }
+
+  #texto-main {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .propiedad {
+    width: 90%;
+    margin: auto;
+  }
 }
