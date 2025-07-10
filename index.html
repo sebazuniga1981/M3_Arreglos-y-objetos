@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Propiedades Venta y Arriendo</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./propiedades_venta.html">Propiedades en Venta</a>
+      <a href="./propiedades_alquiler.html">Propiedades en alquiler</a>
+    </nav>
+    <main class="banner">
+      <img id="img-main" src="./assets/img/img-main.jpeg" alt="" />
+      <h1 id="texto-main">Bienvenido al portal de avisos inmobiliarios</h1>
+    </main>
+    <section id="section-venta">
+      <h2>Propiedades en venta</h2>
+      <div id="contenedor-venta" class="contenedor-propiedades"></div>
+      <a href="propiedades_venta.html"><button>Ver todas las propiedades en venta</button></a>
+    </section>
+
+    <section id="section-alquiler">
+        <h2>Propiedades en arriendo</h2>
+      <div id="contenedor-alquiler" class="contendor-propiedades"></div>
+      <a href="propiedades_alquiler.html"><button>Ver todas las propiedades en arriendo</button></a>
+    </section>
+
+   <!-- rutas de acceso script-->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/data.js"></script>
+  </body>
 </html>
+
